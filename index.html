@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+	<h1>Example</h1>
+	<p>Hello world!!!.</p>
+	<textarea id='msg'>Hola</textarea>
+	<input type='button' id='enviar' value='Enviar' />
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="WebSocket.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#enviar').click(function() {
+				ws.sendMessage(msg.value)
+			})
+		});
+	</script>
+</body>
+</html>
